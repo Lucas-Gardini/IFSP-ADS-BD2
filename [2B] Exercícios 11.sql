@@ -181,7 +181,6 @@ BEGIN
 		UPDATE 	Projeto
 		SET		PCusto = PCusto + (PCusto * (15 / 100))
 		WHERE	PNro = @ProjetosID
-
 		-- Obter a próxima linha
 		FETCH NEXT FROM projetosCursor INTO @ProjetosID;
 	END
